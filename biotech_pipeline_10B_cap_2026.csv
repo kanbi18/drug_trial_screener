@@ -1,0 +1,179 @@
+Ticker,Company,NCT_ID,Title,Phase,Status
+ARWR,Arrowhead Pharmaceuticals,NCT06822790,Long-Term Safety and Efficacy of Plozasiran in Adults With Hypertriglyceridemia,PHASE3,RECRUITING
+ARWR,Arrowhead Pharmaceuticals,NCT07473843,Study of Zodasiran in Adolescent Participants With Homozygous Familial Hypercholesterolemia,PHASE3,NOT_YET_RECRUITING
+ARWR,Arrowhead Pharmaceuticals,NCT07241546,Study of Inhaled ARO-RAGE in Allergen-induced Mild Asthma,PHASE2,NOT_YET_RECRUITING
+ARWR,Arrowhead Pharmaceuticals,NCT07037771,A Phase 3 Study of Zodasiran in Adolescent and Adult Subjects With Homozygous Familial Hypercholesterolemia (YOSEMITE),PHASE3,RECRUITING
+ARWR,Arrowhead Pharmaceuticals,NCT06138743,Study of ARO-DM1 in Subjects With Type 1 Myotonic Dystrophy,"PHASE1, PHASE2",RECRUITING
+ARWR,Arrowhead Pharmaceuticals,NCT06131983,Study of ARO-DUX4 in Adult and Adolescent Patients With Facioscapulohumeral Muscular Dystrophy Type 1,"PHASE1, PHASE2",RECRUITING
+ARWR,Arrowhead Pharmaceuticals,NCT06937203,Study of ARO-ALK7 in Adult Volunteers With Obesity With and Without Type 2 Diabetes Mellitus,"PHASE1, PHASE2",RECRUITING
+ARWR,Arrowhead Pharmaceuticals,NCT06700538,Study of ARO-INHBE in Adults With Obesity With and Without Diabetes Mellitus,"PHASE1, PHASE2",RECRUITING
+ARWR,Arrowhead Pharmaceuticals,NCT07223658,Study of ARO-DIMERPA in Adult Participants With Mixed Hyperlipidemia,"PHASE1, PHASE2",RECRUITING
+ARWR,Arrowhead Pharmaceuticals,NCT06672445,Study of ARO-ATXN2 Injection in Adults With Spinocerebellar Ataxia Type 2,PHASE1,RECRUITING
+ARWR,Arrowhead Pharmaceuticals,NCT07221344,Study of ARO-MAPT-SC in Healthy Subjects and Subjects With Early Alzheimer's Disease,"PHASE1, PHASE2",RECRUITING
+ARWR,Arrowhead Pharmaceuticals,NCT06880770,Study of Plozasiran in Adults With Severe Hypertriglyceridemia at Risk of Acute Pancreatitis,PHASE3,RECRUITING
+AXSM,Axsome Therapeutics,NCT06413420,SUNOSI® (Solriamfetol) Pregnancy Registry,,RECRUITING
+AXSM,Axsome Therapeutics,NCT06170970,Solriamfetol for the Treatment of Multiple Sclerosis Fatigue,PHASE2,RECRUITING
+AXSM,Axsome Therapeutics,NCT06568367,"Studying Solriamfetol Modulation of TAAR-1, Dopamine, and Norepinephrine in Shift Work Disorder (SUSTAIN)",PHASE3,RECRUITING
+AXSM,Axsome Therapeutics,NCT06223880,A Study to Evaluate the Efficacy of AXS-05 Compared to Bupropion in Preventing the Relapse of Depressive Symptoms,PHASE4,RECRUITING
+AXSM,Axsome Therapeutics,NCT06413433,"Elucidating TAAR-1, Dopamine, and Norepinephrine in Binge Eating Disorder Using Solriamfetol",PHASE3,RECRUITING
+AXSM,Axsome Therapeutics,NCT07484217,Clinical Assessment of Response in the Treatment of Depression With Daytime Sleepiness Using Solriamfetol,PHASE3,RECRUITING
+AXSM,Axsome Therapeutics,NCT07398417,Fibromyalgia Response With Esreboxetine Evaluated Using a Randomized Withdrawal Research Design,PHASE3,RECRUITING
+PCVX,Vaxcyte,NCT07425392,"Safety, Tolerability, and Immunogenicity of VAX-31 in Adults ≥50 Years With Prior Pneumococcal Vaccination",PHASE3,RECRUITING
+PRAX,Praxis Precision Medicines,NCT06908356,An Open Label Trial to Evaluate the Efficacy and Safety of PRAX-628 in Adults With Focal Onset or Tonic-Clonic Seizures,PHASE2,RECRUITING
+PRAX,Praxis Precision Medicines,NCT06999902,"Double-blind, Randomized Trial of PRAX-628 in Adults With Focal Seizures to Evaluate Efficacy and Safety (POWER1)","PHASE2, PHASE3",RECRUITING
+PRAX,Praxis Precision Medicines,NCT07505004,"Double-blind, Randomized Clinical Trial Evaluating the Efficacy and Safety of Vormatrigine in Adults With Focal Seizures",PHASE3,RECRUITING
+PRAX,Praxis Precision Medicines,NCT06840925,A Clinical Trial to Evaluate the Relative Bioavailability of PRAX-628,PHASE1,NOT_YET_RECRUITING
+PRAX,Praxis Precision Medicines,NCT07010471,"A Clinical Trial for Participants With DEE to Assess Efficacy, Safety, Tolerability, and PK of Relutrigine",PHASE3,RECRUITING
+PRAX,Praxis Precision Medicines,NCT05737784,A Clinical Trial of PRAX-222 in Pediatric Participants With Early Onset SCN2A Developmental and Epileptic Encephalopathy,"PHASE1, PHASE2",RECRUITING
+PRAX,Praxis Precision Medicines,NCT07019922,A Clinical Trial of Elsunersen in Pediatric SCN2A-DEE to Assess Efficacy and Safety,PHASE3,RECRUITING
+TECH,Bio-Techne Corporation,NCT06966089,ExosomeDx in MRI-negative Men With High PSA,NA,NOT_YET_RECRUITING
+NUVL,Nuvalent,NCT05384626,A Study of Neladalkib (NVL-655) in Patients With Advanced NSCLC and Other Solid Tumors Harboring ALK Rearrangement or Activating ALK Mutation (ALKOVE-1),"PHASE1, PHASE2",RECRUITING
+NUVL,Nuvalent,NCT05118789,A Study of Zidesamtinib (NVL-520) in Patients With Advanced NSCLC and Other Solid Tumors Harboring ROS1 Rearrangement (ARROS-1),"PHASE1, PHASE2",RECRUITING
+NUVL,Nuvalent,NCT06521554,A Study of NVL-330 in Patients With Advanced or Metastatic HER2-altered NSCLC (HEROEX-1),PHASE1,RECRUITING
+NUVL,Nuvalent,NCT06765109,Neladalkib (NVL-655) for TKI-naive Patients With Advanced ALK-Positive NSCLC,PHASE3,RECRUITING
+CYTK,"Cytokinetics,",NCT06736574,Study With Omecamtiv Mecarbil (CK-1827452) to Treat Chronic Heart Failure With Severely Reduced Ejection Fraction,PHASE3,RECRUITING
+CYTK,"Cytokinetics,",NCT07054073,HCMR Re-Imaging Study,,RECRUITING
+CYTK,"Cytokinetics,",NCT06412666,A Study to Evaluate the Effect of Aficamten in Pediatric Patients With Symptomatic Obstructive Hypertrophic Cardiomyopathy (oHCM).,"PHASE2, PHASE3",RECRUITING
+CYTK,"Cytokinetics,",NCT06793371,"AMBER-HFpEF: Assessment of CK-4021586 in a Multi-Center, Blinded Evaluation of Safety and Tolerability Results in HFpEF",PHASE2,RECRUITING
+HALO,Halozyme Therapeutics,NCT06689085,"52 Week Study + 24-Month Long-Term Extension of Safety, PK, & Efficacy of XYOSTED® for Testosterone Replacement in Male Adolescents With Hypogonadism",PHASE3,RECRUITING
+IBRX,ImmunityBio,NCT06800963,ResQ133A-NMIBC: Intravesical Recombinant Mycobacterium (rMBCG) in Participants With NMIBC Eligible to Receive Intravesical Tice BCG,"PHASE1, PHASE2",RECRUITING
+IBRX,ImmunityBio,NCT06765902,Immunotherapy Before and After Surgery,PHASE2,NOT_YET_RECRUITING
+IBRX,ImmunityBio,NCT07488884,"Open-Label, Phase 1 Clinical Trial of Neoadjuvant Nogapendekin Alfa Inbakicept, Sotevtamab, and Zabadinostat in Combination With Gemcitabine and Nab-Paclitaxel for Participants With Borderline Resectable or Locally Advanced Pancreatic Cancer",PHASE1,NOT_YET_RECRUITING
+IBRX,ImmunityBio,NCT06710288,"A Phase 2, Open-label, Single-arm Study Of Autologous M-CENK Adoptive Cell Therapy And N-803 (IL-15 Superagonist) In Combination With Gemcitabine In Participants With Recurrent Platinum-Resistant High-Grade Ovarian Cancer",PHASE2,RECRUITING
+IBRX,ImmunityBio,NCT06829823,Clinical Trial of Ablation Therapy in Participants With Intermediate-Risk Non-Muscle Invasive Papillary Bladder Cancer,PHASE2,NOT_YET_RECRUITING
+IBRX,ImmunityBio,NCT06334991,Study for Subjects With Relapsed/Refractory Non-Hodgkin Lymphoma,PHASE1,RECRUITING
+IBRX,ImmunityBio,NCT07123727,A Study to Examine Anktiva for the Treatment of COVID-19.,PHASE2,RECRUITING
+IBRX,ImmunityBio,NCT06061809,N-803 and PD-L1 t-haNK Combined With Bevacizumab for Recurrent or Progressive Glioblastoma,PHASE2,RECRUITING
+IBRX,ImmunityBio,NCT05618925,Study for Subjects With Relapsed/Refractory Non- Hodgkin Lymphoma,PHASE1,RECRUITING
+IBRX,ImmunityBio,NCT06239220,"PD-L1 t-haNK, NAI IL-15sa and Cetuximab for Recurrent, Metastatic HNSCC",PHASE2,RECRUITING
+IBRX,ImmunityBio,NCT06765954,"Immunotherapy With N 803, ETBX-071, and M-CENK in Combination With Radiation for Participants With High-Risk Prostate Cancer.",PHASE2,NOT_YET_RECRUITING
+IBRX,ImmunityBio,NCT07108036,A Study to Assess Anktiva in Patients With Long Covid-19.,PHASE2,RECRUITING
+IBRX,ImmunityBio,NCT07477366,Study of CD19 t-haNK and NAI With Rituximab in Participants With Indolent Non-Hodgkin Lymphoma,PHASE2,NOT_YET_RECRUITING
+IBRX,ImmunityBio,NCT06745908,ResQ201A: Clinical Trial Of N-803 Plus TISLELIZUMAB And DOCETAXEL Versus DOCETAXEL Monotherapy In Participants With Advanced Or Metastatic Non-Small Cell Lung Cancer,PHASE3,RECRUITING
+IBRX,ImmunityBio,NCT07355205,First-Line Ipilimumab Plus Nivolumab and Nogapendekin Alfa Inbakicept (N-803) in Patients With Stage IV or Recurrent Non-Small Cell Lung Cancer,PHASE2,NOT_YET_RECRUITING
+IBRX,ImmunityBio,NCT07492888,Nogapendekin Alfa-Inbakicept and iNKT Cells for Critically Ill Adults With Severe Community-Acquired Pneumonia (With or Without Sepsis/ARDS),PHASE2,NOT_YET_RECRUITING
+IBRX,ImmunityBio,NCT07492875,Study of Nogapendekin Alfa Inbakicept and iNKT Cells in Critically Ill Adults With Severe Community-Acquired Pneumonia,PHASE3,NOT_YET_RECRUITING
+IBRX,ImmunityBio,NCT07125872,Study of Relapsed/ Refractory B-cell Non- Hodgkin Lymphoma,PHASE2,RECRUITING
+KRYS,Krystal Biotech,NCT06999733,A Study Comparing KB801 Verse Placebo in Patients With Stage 2 or 3 Neurotrophic Keratitis,"PHASE1, PHASE2",RECRUITING
+KRYS,Krystal Biotech,NCT06228326,A Study Assessing KB707 for the Treatment of Advanced Solid Tumor Malignancies Affecting the Lungs,"PHASE1, PHASE2",RECRUITING
+KRYS,Krystal Biotech,NCT06563414,A Natural History Study of Corneal Abrasions in Patients With Dystrophic Epidermolysis Bullosa (DEB),,RECRUITING
+KRYS,Krystal Biotech,NCT05970497,A Study Assessing KB707 for the Treatment of Locally Advanced or Metastatic Solid Tumors,"PHASE1, PHASE2",RECRUITING
+KRYS,Krystal Biotech,NCT04917887,Long-Term Follow-up Protocol,,RECRUITING
+KRYS,Krystal Biotech,NCT06049082,A Study of KB408 for the Treatment of Alpha-1 Antitrypsin Deficiency,PHASE1,RECRUITING
+KRYS,Krystal Biotech,NCT05504837,A Study Assessing KB407 for the Treatment of Cystic Fibrosis,PHASE1,RECRUITING
+KRYS,Krystal Biotech,NCT07016750,A Study Comparing KB803 and Matched Placebo in Patients With Dystrophic Epidermolysis Bullosa,PHASE3,RECRUITING
+MTSR,Metsera,NCT07311850,Efficacy and Safety of MET097 Once-Weekly in People With Overweight or Obesity,PHASE3,RECRUITING
+MTSR,Metsera,NCT06924320,A Study of MET233 in Combination With MET097 in Individuals With Obesity or Overweight With or Without Diabetes,"PHASE1, PHASE2",RECRUITING
+KYMR,Kymera Therapeutics,NCT07412288,First-in-human Study of Orally Administered KT-579 in Healthy Adult Participants,PHASE1,RECRUITING
+KYMR,Kymera Therapeutics,NCT07217015,A Study of KT-621 Administered Orally to Participants With Moderate to Severe Atopic Dermatitis,PHASE2,RECRUITING
+KYMR,Kymera Therapeutics,NCT07323654,A Study of KT-621 Administered Orally to Adult Participants With Moderate to Severe Eosinophilic Asthma,PHASE2,RECRUITING
+ACLX,Arcellx,NCT06626919,A Phase 1 Study of Anitocabtagene Autoleucel for the Treatment of Subjects With Non-oncology Plasma Cell-related Diseases,PHASE1,RECRUITING
+ACLX,Arcellx,NCT06413498,A Study Comparing Anitocabtagene Autoleucel to Standard of Care Therapy in Participants With Relapsed/ Refractory Multiple Myeloma,PHASE3,RECRUITING
+PTGX,Protagonist Therapeutics,NCT07153146,"Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of PN-881 in Healthy Subjects.",PHASE1,RECRUITING
+APGE,Apogee Therapeutics,NCT07003425,A Long-term Safety and Efficacy Study Evaluating APG777 in Atopic Dermatitis,PHASE2,RECRUITING
+COGT,Cogent Biosciences,NCT04996875,(Apex) Bezuclastinib in Patients With Advanced Systemic Mastocytosis,PHASE2,RECRUITING
+COGT,Cogent Biosciences,NCT07383506,"A Study of Mutant Selective-Inhibitor (CGT6297), in Patients With Advanced Solid Tumors",PHASE1,NOT_YET_RECRUITING
+COGT,Cogent Biosciences,NCT06777316,A Study of an FGFR2/3 Inhibitor (CGT4859) in Patients With Cholangiocarcinoma and Other Advanced Solid Tumors,"PHASE1, PHASE2",RECRUITING
+COGT,Cogent Biosciences,NCT07361562,"A Study of a Selective ERBB2 Inhibitor (CGT4255), in Patients With Advanced Solid Tumors",PHASE1,RECRUITING
+CELC,Celcuity,NCT06757634,"Phase 3 Study of Gedatolisib as First-Line Treatment for Patients With HR-Positive, HER2-Negative Advanced Breast Cancer (VIKTORIA-2)",PHASE3,RECRUITING
+CELC,Celcuity,NCT03675893,"RESOLVE: Abemaciclib + Letrozole +/- Metformin, Zotatifin, or Gedatolisib in Endometrial or Low-Grade Serous Ovarian Cancer",PHASE2,RECRUITING
+CELC,Celcuity,NCT06190899,Gedatolisib in Combination With Darolutamide in Metastatic Castration-Resistant Prostate Cancer,"PHASE1, PHASE2",RECRUITING
+MIRM,Mirum Pharmaceuticals,NCT07290257,Long-Term Low-Intervention SafEty and Clinical Outcomes Clinical Study of LivmArli® in Patients With Alagille Syndrome in the European Union (LEAP-EU),PHASE4,RECRUITING
+MIRM,Mirum Pharmaceuticals,NCT07411716,Pediatric Evaluation and Registry for Liver Cholestasis in Canada,,NOT_YET_RECRUITING
+MIRM,Mirum Pharmaceuticals,NCT05050136,A Study to Evaluate Efficacy and Safety of an Investigational Drug Named Volixibat in Patients With Itching Caused by Primary Biliary Cholangitis,PHASE2,RECRUITING
+MIRM,Mirum Pharmaceuticals,NCT07454837,Phase 2b/3 Study to Evaluate Switching to Brelovitug for the Treatment of CHD in Participants Receiving Bulevirtide,"PHASE2, PHASE3",RECRUITING
+MIRM,Mirum Pharmaceuticals,NCT06193928,Long-Term SafEty and Clinical Outcomes of LivmArli in Patients in the United States (LEAP-US),,RECRUITING
+MIRM,Mirum Pharmaceuticals,NCT07209462,Study of MRM-3379 in Male Participants With Fragile X Syndrome (BLOOM),PHASE2,RECRUITING
+MIRM,Mirum Pharmaceuticals,NCT07200908,A Trial Evaluating Brelovitug (BJT-778) vs Bulevirtide for the Treatment of Chronic Hepatitis Delta Infection (AZURE-2),PHASE3,RECRUITING
+MIRM,Mirum Pharmaceuticals,NCT07298330,A Trial Evaluating Brelovitug vs Delayed Treatment for the Treatment of Chronic Hepatitis Delta Infection (AZURE-4),PHASE3,RECRUITING
+MIRM,Mirum Pharmaceuticals,NCT07389031,Maralixibat for Intrahepatic Cholestasis of Pregnancy,PHASE2,NOT_YET_RECRUITING
+RYTM,Rhythm Pharmaceuticals,NCT06239116,A Study of RM-718 in Healthy Subjects and Patients With MC4R Pathway Impairment,"PHASE1, PHASE2",RECRUITING
+RYTM,Rhythm Pharmaceuticals,NCT06420622,INDIcators for Clarifying the bAckground of exTreme Obesity in childRen,,RECRUITING
+RYTM,Rhythm Pharmaceuticals,NCT06760546,A Trial of Setmelanotide in Patients With Congenital Hypothalamic Obesity (Sub-study of NCT05774756),PHASE3,RECRUITING
+PTCT,PTC Therapeutics,NCT06302348,A Study of Sepiapterin in Participants With Phenylketonuria (PKU),PHASE3,RECRUITING
+PTCT,PTC Therapeutics,NCT04014530,Pembrolizumab With Ataluren in Patients With Metastatic pMMR and dMMR Colorectal Carcinoma or Metastatic dMMR Endometrial Carcinoma: the ATAPEMBRO Study,"PHASE1, PHASE2",RECRUITING
+CGON,CG Oncology,NCT06567743,Phase 2 Study to Evaluate Safety and Efficacy of Cretostimogene Grenadenorepvec in High-Risk NMIBC,PHASE2,RECRUITING
+XENE,Xenon Pharmaceuticals,NCT05716100,A Randomized Study of XEN1101 Versus Placebo in Focal-Onset Seizures (X-TOLE3),PHASE3,RECRUITING
+XENE,Xenon Pharmaceuticals,NCT07172516,A Randomized Study of Azetukalner Versus Placebo in Depressive Episodes Associated With Bipolar I or II Disorder (Bipolar Depression),PHASE3,RECRUITING
+XENE,Xenon Pharmaceuticals,NCT06775379,A Randomized Study of Azetukalner Versus Placebo in Major Depressive Disorder,PHASE3,RECRUITING
+XENE,Xenon Pharmaceuticals,NCT07076407,A Randomized Study of Azetukalner Versus Placebo in Major Depressive Disorder (X-NOVA3),PHASE3,RECRUITING
+XENE,Xenon Pharmaceuticals,NCT05667142,A Study to Evaluate XEN1101 as Adjunctive Therapy in Primary Generalized Tonic-Clonic Seizures,PHASE3,RECRUITING
+TGTX,TG Therapeutics,NCT06143514,A Study Evaluating the Presence and Concentration of BRIUMVI™ (Ublituximab) in Breast Milk,,RECRUITING
+TGTX,TG Therapeutics,NCT07220252,Study to Assess Effects of Ublituximab in Pediatric Participants With Relapsing Forms of Multiple Sclerosis,"PHASE2, PHASE3",NOT_YET_RECRUITING
+TGTX,TG Therapeutics,NCT06864936,Exploration of Novel Imaging Biomarkers on OCT for Ublituximab Treatment Response in Multiple Sclerosis,NA,NOT_YET_RECRUITING
+TGTX,TG Therapeutics,NCT05877963,"Study to Evaluate Safety, Efficacy and Pharmacokinetics (PK) of a Modified Regimen of Ublituximab",PHASE3,RECRUITING
+TGTX,TG Therapeutics,NCT07389590,Study of Ublituximab for Ocrelizumab Wearing-Off in Multiple Sclerosis,PHASE4,NOT_YET_RECRUITING
+TGTX,TG Therapeutics,NCT06433752,A Study Evaluating the Real World Experience of Participants Treated With BRIUMVI® (Ublituximab-xiiy) for Relapsing Multiple Sclerosis (RMS),,RECRUITING
+TGTX,TG Therapeutics,NCT07225361,Ublituximab (Briumvi) for Early Forms of Relapsing Multiple Sclerosis,PHASE4,RECRUITING
+TGTX,TG Therapeutics,NCT06680037,A Study to Assess the Safety and Clinical Activity of Azer-cel in Participants With B-cell Mediated Autoimmune Disorders,PHASE1,RECRUITING
+TGTX,TG Therapeutics,NCT07211633,"A Study to Evaluate the Pharmacokinetics, Pharmacodynamics, Safety, Radiological and Clinical Effects of Subcutaneous Ublituximab in Participants With Relapsing Multiple Sclerosis (RMS)",PHASE3,RECRUITING
+TGTX,TG Therapeutics,NCT07103746,Ublituximab in Autoantibody Positive Immune Mediated Necrotizing Myopathy,PHASE2,RECRUITING
+TGTX,TG Therapeutics,NCT06433765,A Study Evaluating the Effect of BRIUMVI® (Ublituximab) on Pregnancy and Infant Outcomes in Participants With Multiple Sclerosis (MS),,RECRUITING
+TGTX,TG Therapeutics,NCT07503873,A Study to Evaluate Pharmacokinetics (PK) and Safety of Subcutaneous (SC) Ublituximab Administered at Various Injection Sites and Relative Bioavailability Via Autoinjector (AI) Versus Syringe Subcutaneously in Participants With Multiple Sclerosis (MS),PHASE2,NOT_YET_RECRUITING
+CAI,Caris Life Sciences,NCT03870620,Metastatic Breast Cancer in Austria,,RECRUITING
+ERAS,Erasca,NCT06983743,A Study of ERAS-0015 in Patients With Advanced or Metastatic Solid Tumors,PHASE1,RECRUITING
+ERAS,Erasca,NCT07021898,A Study of ERAS-4001 in Patients With Advanced or Metastatic Solid Tumors.,PHASE1,RECRUITING
+IMVT,Immunovant,NCT06979531,Efficacy and Safety of IMVT-1402 in Adult Participants With Primary Sjogren's Disease With Moderate to Severe Systemic Disease Activity,PHASE2,RECRUITING
+IMVT,Immunovant,NCT06980805,"A Study to Assess the Safety, Tolerability, and Efficacy of IMVT-1402 in Participants With Cutaneous Lupus Erythematosus (CLE)",PHASE2,RECRUITING
+IMVT,Immunovant,NCT07018323,"A Study to Assess the Efficacy, Safety, and Tolerability of IMVT-1402 as Treatment for Adult Participants With Graves' Disease",PHASE2,RECRUITING
+IMVT,Immunovant,NCT07039916,Study to Assess the Efficacy and Safety of IMVT-1402 in Participants With Mild to Severe Generalized Myasthenia Gravis,PHASE3,RECRUITING
+IMVT,Immunovant,NCT07032662,IMVT-1402 in Adult Participants With Chronic Inflammatory Demyelinating Polyneuropathy (CIDP),PHASE2,RECRUITING
+IMVT,Immunovant,NCT06727604,"A Study to Assess the Efficacy, Safety, and Tolerability of IMVT-1402 as Treatment for Adult Participants With Graves' Disease",PHASE2,RECRUITING
+APLS,Apellis Pharmaceuticals,NCT07020832,A Phase 3 Study to Evaluate the Efficacy and Safety of Pegcetacoplan in Adults at High Risk of Delayed Graft Function (DGF) Following Kidney Allograft Transplantation,PHASE3,RECRUITING
+APLS,Apellis Pharmaceuticals,NCT07213960,A Sequential Phase 2/3 Study of APL2 in Patients With Focal Segmental Glomerulosclerosis,"PHASE2, PHASE3",NOT_YET_RECRUITING
+APLS,Apellis Pharmaceuticals,NCT07215390,"A Phase 2, Randomized, Placebo Controlled, Multicenter, Masked Study to Evaluate the Efficacy, Safety, Tolerability, and Pharmacodynamics of Multidose APL 3007 in Combination With Syfovre/Pegcetacoplan (APL-2) in Patients Diagnosed With Geographic Atrophy Secondary to Age Related Macular Degeneratio",PHASE2,RECRUITING
+APLS,Apellis Pharmaceuticals,NCT04901936,A Study of Pegcetacoplan in Pediatric Patients With Paroxysmal Nocturnal Hemoglobinuria (PNH),PHASE2,RECRUITING
+CRSP,CRISPR Therapeutics AG,NCT05565248,"An Open-Label, FIH Study Evaluating the Safety, Tolerability, and Efficacy of VCTX211 Combination Product in Subjects With T1D","PHASE1, PHASE2",RECRUITING
+CRSP,CRISPR Therapeutics AG,NCT07491172,A Safety and Tolerability Trial Evaluating CTX310 in Participants With Refractory Dyslipidemias,PHASE1,RECRUITING
+CRSP,CRISPR Therapeutics AG,NCT05643742,A Safety and Efficacy Study Evaluating CTX112 in Subjects With Relapsed or Refractory B-Cell Malignancies,"PHASE1, PHASE2",RECRUITING
+DNTH,Dianthus Therapeutics,NCT06537999,A Clinical Study to Evaluate DNTH103 in Adults With Multifocal Motor Neuropathy,PHASE2,RECRUITING
+DNTH,Dianthus Therapeutics,NCT06858579,A Study to Evaluate the Efficacy and Safety of DNTH103 in Adults With Chronic Inflammatory Demyelinating Polyneuropathy (CAPTIVATE),PHASE3,RECRUITING
+FOLD,Amicus Therapeutics,NCT06904261,A Study of Migalastat in Pediatric Subjects (2 to <12 Yrs) With Fabry Disease and Amenable GLA Variants,PHASE3,RECRUITING
+FOLD,Amicus Therapeutics,NCT04808505,"A Study to Evaluate the Safety, Efficacy, PK, PD and Immunogenicity of Cipaglucosidase Alfa/Miglustat in IOPD Subjects Aged 0 to <18",PHASE3,RECRUITING
+FOLD,Amicus Therapeutics,NCT06121011,A Global Prospective Observational Registry of Patients With Pompe Disease,,RECRUITING
+FOLD,Amicus Therapeutics,NCT04252066,A Global Prospective Observational Study of Women With Fabry Disease and Their Infants During Pregnancy and Breastfeeding,,RECRUITING
+FOLD,Amicus Therapeutics,NCT06906367,A Study of Patients With Fabry Disease (US Specific),,RECRUITING
+CORT,Corcept Therapeutics,NCT06099769,"A Study of Enzalutamide, Enzalutamide in Combination With Mifepristone, or Chemotherapy in People With Metastatic Breast Cancer",PHASE2,RECRUITING
+CORT,Corcept Therapeutics,NCT06689254,REVERSE: Improving Treatment-resistant Post Traumatic Stress Disorder (PTSD) with Glucocorticoid Receptor (GR) Antagonism,PHASE2,RECRUITING
+CORT,Corcept Therapeutics,NCT05407324,Dazucorilant in Patients With Amyotrophic Lateral Sclerosis,PHASE2,RECRUITING
+CORT,Corcept Therapeutics,NCT07259317,Relacorilant With Nab-Paclitaxel and Gemcitabine in Patients With Metastatic Pancreatic Adenocarcinoma,PHASE2,RECRUITING
+CORT,Corcept Therapeutics,NCT07276373,Two Part Study of Nenocorilant Combined With Nivolumab in Patients With Advanced Solid Malignancies,"PHASE1, PHASE2",RECRUITING
+CORT,Corcept Therapeutics,NCT06947304,Evaluation of Miricorilant on Liver Fat in Patients With MASLD,PHASE1,RECRUITING
+CORT,Corcept Therapeutics,NCT06906341,Relacorilant in Combination With Different Treatment Regimens in Patients With Gynecological Cancers,PHASE2,RECRUITING
+CRNX,Crinetics Pharmaceuticals,NCT07129252,A Study to Investigate Safety and Effectiveness of CRN09682 in Participants With SST2-Expressing NENs and Other Solid Tumors,"PHASE1, PHASE2",RECRUITING
+CRNX,Crinetics Pharmaceuticals,NCT07144163,A Study to Evaluate Atumelnant in Adults With Congenital Adrenal Hyperplasia,PHASE3,RECRUITING
+CRNX,Crinetics Pharmaceuticals,NCT07159841,A Study in Pediatric Participants With Congenital Adrenal Hyperplasia (Balance-CAH),"PHASE2, PHASE3",RECRUITING
+CRNX,Crinetics Pharmaceuticals,NCT07087054,Carcinoid Syndrome Efficacy Study Featuring an Oral Daily Paltusotine Regimen,PHASE3,RECRUITING
+CRNX,Crinetics Pharmaceuticals,NCT06712823,An Extension Study to Evaluate Safety and Efficacy in Participants Treated With CRN04894,PHASE2,RECRUITING
+CRNX,Crinetics Pharmaceuticals,NCT05804669,A Study to Evaluate the Safety and PK of CRN04894 for the Treatment of Cushing's Syndrome,"PHASE1, PHASE2",RECRUITING
+OGN,Organon & Co.,NCT07265479,"A Study to Investigate Safety and Efficacy of Tapinarof Cream, 1% in Participants Ages 3 Months to < 24 Months With Atopic Dermatitis",PHASE3,RECRUITING
+OGN,Organon & Co.,NCT06561321,Study to Evaluate the Safety and Efficacy of Tapinarof in Adults With Palmoplantar Keratoderma,PHASE2,RECRUITING
+AMRX,Amneal Pharmaceuticals,NCT00404989,Antiretroviral Pregnancy Registry (APR): Multi-sponsor Registry to Detect Any Major Teratogenic Effect Involving Any of the Registry Drugs When Administered to Pregnant People.,,RECRUITING
+AMRX,Amneal Pharmaceuticals,NCT05401357,Bioequivalence Study With Clinical Endpoint Comparing Bimatoprost Ophthalmic Solution 0.01% and LUMIGAN® in the Treatment of Chronic Open-Angle Glaucoma or Ocular Hypertension in Both Eyes.,PHASE3,RECRUITING
+AMRX,Amneal Pharmaceuticals,NCT06267274,"A Randomized, Double-blind, Parallel-group, Two-arm, Multiple Dose, Multicenter, Bioequivalence Study With Clinical Endpoint in the Treatment of Subjects With Chronic Open-angle Glaucoma or Ocular Hypertension in Both Eyes",PHASE1,RECRUITING
+AMRX,Amneal Pharmaceuticals,NCT07138560,BOOST-PD A Naturalistic Study on IPX-203 for Parkinson's Disease,PHASE4,RECRUITING
+AMRX,Amneal Pharmaceuticals,NCT06765668,A Study of CREXONT (Carbidopa and Levodopa) Extended-Release Capsules in Participants With Parkinson's Disease,PHASE4,RECRUITING
+AMRX,Amneal Pharmaceuticals,NCT01733082,The Mycophenolate Pregnancy Registry,,RECRUITING
+KNSA,"Kiniksa Pharmaceuticals International, plc",NCT07010159,Phase 2/3 Study of KPL-387 in Recurrent Pericarditis,"PHASE2, PHASE3",RECRUITING
+KNSA,"Kiniksa Pharmaceuticals International, plc",NCT07288216,Transition to KPL-387 Monotherapy Dosing & Administration Study,PHASE2,RECRUITING
+SUPN,Supernus Pharmaceuticals,NCT07141329,SPN-817 Open-Label Extension Study in Adults With Focal Onset Seizures,PHASE2,RECRUITING
+SUPN,Supernus Pharmaceuticals,NCT01246765,National Pregnancy Registry for Psychiatric Medications,,RECRUITING
+SUPN,Supernus Pharmaceuticals,NCT07226661,"Double-blind, Placebo-controlled Study in Adults With Major Depressive Disorder",PHASE2,RECRUITING
+SUPN,Supernus Pharmaceuticals,NCT06798896,"RENAISSANCE 2: SPN-817 Phase 2, Double-Blind, Placebo-Controlled Study in Adults with Focal Onset Seizures",PHASE2,RECRUITING
+SUPN,Supernus Pharmaceuticals,NCT04781140,Evaluation of SPN-812 (Viloxazine Extended-release Capsule) in Preschool-age Children With ADHD,PHASE4,RECRUITING
+SUPN,Supernus Pharmaceuticals,NCT07219927,Real-World Patient Experiences Using Continuous Subcutaneous Apomorphine Infusion (ONAPGOTM) in the United States:,,RECRUITING
+SUPN,Supernus Pharmaceuticals,NCT07125222,Use of Gocovri to Improve Disability Due to Radiation Encephalopathy,PHASE2,NOT_YET_RECRUITING
+BCRX,BioCryst Pharmaceuticals,NCT06539507,"A Study of the Safety, Tolerability, Pharmacokinetics, and Immunogenicity of BCX17725",PHASE1,RECRUITING
+AMLX,Amylyx Pharmaceuticals,NCT06665165,AMX0114 in Adult Participants With Amyotrophic Lateral Sclerosis,PHASE1,RECRUITING
+ANIP,ANI Pharmaceuticals,NCT06539481,"Open Label Trial Studying the Safety and Effectiveness of ILUVIEN® (190μg) in Children and Adolescents, Who Have Recurrent Non-infectious Uveitis Affecting the Posterior Segment of the Eye.",PHASE4,RECRUITING
+ANIP,ANI Pharmaceuticals,NCT05486468,The Use of Two YUTIQ Versus Sham for Treatment of Chronic Non Infectious Intraocular Inflammation Affecting the Posterior Segment,PHASE3,RECRUITING
+ANIP,ANI Pharmaceuticals,NCT07346079,Purified Cortrophin® Gel Efficacy and Safety Study of 2 Dose Levels in Patients With Acute Gout Flares,PHASE4,RECRUITING
+HROW,Harrow,NCT07224529,Efficacy of Vevye Ophthalmic Solution for the Treatment of Meibomian Gland Dysfunction,PHASE4,NOT_YET_RECRUITING
+HROW,Harrow,NCT07368595,Comparison of Conjunctival Goblet Cell Density in Dry Eye Patients Treated With Cyclosporine 0.1% Dissolved in Perfluorobutylpentane (Vevye®) or Generic 0.05% Cyclosporine Emulsion for 8 Weeks,PHASE4,NOT_YET_RECRUITING
+EBS,Emergent BioSolutions,NCT02177721,Clinical Benefit and Safety of Raxibacumab in Patients With Symptomatic Inhalational Anthrax in a Mass Exposure Scenario,PHASE4,NOT_YET_RECRUITING
+EBS,Emergent BioSolutions,NCT07478471,Observational Study of Raxibacumab in Sporadic Cases of Systemic Anthrax,,NOT_YET_RECRUITING
+EBS,Emergent BioSolutions,NCT03569553,A Field Study Evaluating Clinical Benefit and Safety of AIGIV (ANTHRASIL®) in Inhalational Anthrax Patients,,NOT_YET_RECRUITING
+EBS,Emergent BioSolutions,NCT07268612,Evaluation of Clinical Benefit and Safety Following CYFENDUS Administration for Post-Exposure Prophylaxis of Anthrax Disease.,,NOT_YET_RECRUITING
+EBS,Emergent BioSolutions,NCT03569514,Observational Study Evaluating Clinical Benefit and Safety of AIGIV (ANTHRASIL®) in Patients With Systemic Anthrax,,NOT_YET_RECRUITING
+ANIK,Anika Therapeutics,NCT06741527,Integrity Implant System Post Market Clinical Follow-Up Study,NA,RECRUITING
+DERM,Journey Medical Corporation,NCT07462702,Topical Minocycline for CARP,EARLY_PHASE1,NOT_YET_RECRUITING
