@@ -1,45 +1,53 @@
-import yfinance as yf
+import os
 import pandas as pd
 import requests
 import time
 
-# yfinance industry keys for biotech & pharma sectors
-drug_company_sectors = [
-    "biotechnology",
-    "drug-manufacturers-general",
-    "drug-manufacturers-specialty-generic"
+FMP_API_KEY = os.environ.get("FMP_API_KEY", "")
+
+# FMP industry names matching the old yfinance sectors
+FMP_INDUSTRIES = [
+    "Biotechnology",
+    "Drug Manufacturers - General",
+    "Drug Manufacturers - Specialty & Generic",
 ]
 
-def get_public_biotech_list():
-    """Fetch top companies from each drug/biotech sector via yfinance.
-    Returns a deduplicated DataFrame with the ticker symbol as a column."""
-    complete_drug_companies = []
 
-    for sector_name in drug_company_sectors:
-        print(f"Fetching companies for sector: {sector_name}...")
-        try:
-            drug_sector = yf.Industry(sector_name)
-            top_sector_companies = drug_sector.top_companies
+def get_public_biotech_list(max_market_cap=None):
+    """Fetch the full universe of biotech/pharma companies via the FMP stock screener.
+    Returns a DataFrame with columns: symbol, name, marketCap."""
+    if not FMP_API_KEY:
+        raise RuntimeError("FMP_API_KEY environment variable is not set.")
 
-            if top_sector_companies is not None and not top_sector_companies.empty:
-                complete_drug_companies.append(top_sector_companies)
-                print(f"  Found {len(top_sector_companies)} companies.")
-            else:
-                print(f"  No data returned for {sector_name}.")
+    all_companies = []
+    for industry in FMP_INDUSTRIES:
+        print(f"Fetching companies for industry: {industry}...")
+        params = {
+            "sector": "Healthcare",
+            "industry": industry,
+            "exchange": "NYSE,NASDAQ,AMEX",
+            "apikey": FMP_API_KEY,
+        }
+        if max_market_cap is not None:
+            params["marketCapLowerThan"] = int(max_market_cap)
 
-        except Exception as e:
-            print(f"  Error accessing {sector_name}: {e}")
+        resp = requests.get(
+            "https://financialmodelingprep.com/api/v3/stock-screener",
+            params=params,
+            timeout=15,
+        )
+        resp.raise_for_status()
+        companies = resp.json()
+        print(f"  Found {len(companies)} companies.")
+        all_companies.extend(companies)
 
-    if not complete_drug_companies:
+    if not all_companies:
         return pd.DataFrame()
 
-    # Combine all sectors; the ticker is the index, so deduplicate on it
-    combined = pd.concat(complete_drug_companies)
-    combined = combined[~combined.index.duplicated(keep='first')]
-
-    # Promote the ticker index to a regular 'symbol' column for downstream use
-    combined = combined.reset_index(names='symbol')
-    return combined
+    df = pd.DataFrame(all_companies)
+    df = df.rename(columns={"companyName": "name"})
+    df = df.drop_duplicates(subset="symbol", keep="first")
+    return df[["symbol", "name", "marketCap"]]
 
 # --- Helper to strip common corporate suffixes ---
 def clean_company_name(name):
@@ -77,31 +85,16 @@ def generate_biotech_trials(max_market_cap_in_billions=None):
                     If None, all companies are included and the output is
                     master_biotech_pipeline_2026.csv.
     """
-    # --- Step 1: Build the company list from yfinance ---
-    biotech_pharma_df = get_public_biotech_list()
+    # --- Step 1: Build the company list from FMP (market cap filter applied at query time) ---
+    threshold = max_market_cap_in_billions * 1e9 if max_market_cap_in_billions else None
+    biotech_pharma_df = get_public_biotech_list(max_market_cap=threshold)
 
     if biotech_pharma_df.empty:
         print("No companies found. Exiting.")
         return
 
-    # --- Step 2: Filter by market cap if requested ---
     if max_market_cap_in_billions is not None:
-        threshold = max_market_cap_in_billions * 1e9
-        print(f"Fetching market caps to filter for <= ${max_market_cap_in_billions}B...")
-        max_market_cap_in_billionss = {}
-        for symbol in biotech_pharma_df['symbol']:
-            try:
-                info = yf.Ticker(symbol).fast_info
-                max_market_cap_in_billionss[symbol] = info.get('marketCap', info.get('max_market_cap_in_billions', 0)) or 0
-            except Exception:
-                max_market_cap_in_billionss[symbol] = 0
-        biotech_pharma_df['max_market_cap_in_billions'] = biotech_pharma_df['symbol'].map(max_market_cap_in_billionss)
-        biotech_pharma_df = biotech_pharma_df[biotech_pharma_df['max_market_cap_in_billions'] <= threshold]
-        print(f"  {len(biotech_pharma_df)} companies below ${max_market_cap_in_billions}B market cap.")
-
-    if biotech_pharma_df.empty:
-        print("No companies remain after filtering. Exiting.")
-        return
+        print(f"  {len(biotech_pharma_df)} companies at or below ${max_market_cap_in_billions}B market cap.")
 
     print(f"Total companies: {len(biotech_pharma_df)}")
     print(biotech_pharma_df[['symbol', 'name']].head())
