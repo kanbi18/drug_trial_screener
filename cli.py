@@ -13,12 +13,11 @@ import sys
 
 import pandas as pd
 
-from pipeline.screener import get_public_biotech_list
-from pipeline.trials import fetch_all_trials
-from pipeline.scoring import calculate_readiness_score
-from pipeline.company_info import build_company_table, get_fda_approval_count
-from pipeline.trials import clean_company_name
-from pipeline.export import (
+from pipeline.stock_screener import get_public_biotech_list
+from pipeline.clinical_trials import fetch_all_trials, clean_company_name
+from pipeline.trial_readiness_scoring import calculate_readiness_score
+from pipeline.company_metadata import build_company_table, get_fda_approval_count
+from pipeline.pipeline_exporter import (
     export_trials_csv,
     export_companies_csv,
     export_company_list_csv,
@@ -120,6 +119,7 @@ def run_pipeline(args):
         print("No companies found. Exiting.")
         return
 
+    # Format cap as e.g. "10B" (int) or "2.5B" (float), used in output filenames
     cap_label = f"{int(args.cap)}B" if args.cap and args.cap == int(args.cap) else (
         f"{args.cap}B" if args.cap else None
     )

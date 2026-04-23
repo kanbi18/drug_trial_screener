@@ -48,7 +48,7 @@ def build_company_table(companies_df, trial_results=None):
             ticker, company_name, market_cap, sector, industry, exchange,
             fda_approved_drugs_count, active_trial_count, avg_readiness_score.
     """
-    from pipeline.trials import clean_company_name
+    from pipeline.clinical_trials import clean_company_name
 
     rows = []
     for _, company in companies_df.iterrows():

@@ -2,7 +2,7 @@
 
 import pytest
 from unittest.mock import patch, MagicMock
-from pipeline.trials import clean_company_name, fetch_trials, fetch_all_trials
+from pipeline.clinical_trials import clean_company_name, fetch_trials, fetch_all_trials
 import pandas as pd
 
 
@@ -84,7 +84,7 @@ SAMPLE_API_RESPONSE = {
 
 
 class TestFetchTrials:
-    @patch("pipeline.trials.requests.get")
+    @patch("pipeline.clinical_trials.requests.get")
     def test_parses_single_study(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.json.return_value = SAMPLE_API_RESPONSE
@@ -105,7 +105,7 @@ class TestFetchTrials:
         assert trial["start_date"] == "2025-03-01"
         assert trial["has_results"] is False
 
-    @patch("pipeline.trials.requests.get")
+    @patch("pipeline.clinical_trials.requests.get")
     def test_empty_response(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.json.return_value = {"studies": []}
@@ -115,13 +115,13 @@ class TestFetchTrials:
         results = fetch_trials("Unknown Corp")
         assert results == []
 
-    @patch("pipeline.trials.requests.get")
+    @patch("pipeline.clinical_trials.requests.get")
     def test_network_error_returns_empty(self, mock_get):
         mock_get.side_effect = ConnectionError("timeout")
         results = fetch_trials("TestCo")
         assert results == []
 
-    @patch("pipeline.trials.requests.get")
+    @patch("pipeline.clinical_trials.requests.get")
     def test_custom_statuses(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.json.return_value = {"studies": []}
@@ -133,7 +133,7 @@ class TestFetchTrials:
         call_params = mock_get.call_args[1]["params"]
         assert "RECRUITING|ACTIVE_NOT_RECRUITING" == call_params["filter.overallStatus"]
 
-    @patch("pipeline.trials.requests.get")
+    @patch("pipeline.clinical_trials.requests.get")
     def test_missing_optional_fields(self, mock_get):
         minimal_study = {
             "studies": [{
@@ -168,8 +168,8 @@ class TestFetchTrials:
 # ── fetch_all_trials ───────────────────────────────────────────────────────
 
 class TestFetchAllTrials:
-    @patch("pipeline.trials.time.sleep")
-    @patch("pipeline.trials.fetch_trials")
+    @patch("pipeline.clinical_trials.time.sleep")
+    @patch("pipeline.clinical_trials.fetch_trials")
     def test_attaches_ticker_and_company(self, mock_fetch, mock_sleep):
         mock_fetch.return_value = [
             {"nct_id": "NCT001", "title": "Trial 1", "phase": "PHASE2",
@@ -185,8 +185,8 @@ class TestFetchAllTrials:
         assert results[0]["ticker"] == "ABCD"
         assert results[0]["company"] == "Abcd"
 
-    @patch("pipeline.trials.time.sleep")
-    @patch("pipeline.trials.fetch_trials")
+    @patch("pipeline.clinical_trials.time.sleep")
+    @patch("pipeline.clinical_trials.fetch_trials")
     def test_multiple_companies(self, mock_fetch, mock_sleep):
         mock_fetch.side_effect = [
             [{"nct_id": "NCT001", "title": "T1", "phase": "PHASE1",
@@ -203,8 +203,8 @@ class TestFetchAllTrials:
         assert len(results) == 1
         assert results[0]["ticker"] == "AAA"
 
-    @patch("pipeline.trials.time.sleep")
-    @patch("pipeline.trials.fetch_trials")
+    @patch("pipeline.clinical_trials.time.sleep")
+    @patch("pipeline.clinical_trials.fetch_trials")
     def test_respects_rate_limit(self, mock_fetch, mock_sleep):
         mock_fetch.return_value = []
         df = pd.DataFrame([

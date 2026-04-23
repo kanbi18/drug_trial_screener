@@ -3,7 +3,7 @@
 import os
 import pytest
 import pandas as pd
-from pipeline.export import (
+from pipeline.pipeline_exporter import (
     export_trials_csv,
     export_companies_csv,
     export_company_list_csv,

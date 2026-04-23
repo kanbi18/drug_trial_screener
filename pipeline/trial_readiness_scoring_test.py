@@ -1,7 +1,7 @@
 """Tests for pipeline.scoring module."""
 
 import pytest
-from pipeline.scoring import (
+from pipeline.trial_readiness_scoring import (
     PHASE_BASE_RATES,
     WEIGHTS,
     get_base_rate,

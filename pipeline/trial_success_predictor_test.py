@@ -1,7 +1,7 @@
 """Tests for pipeline.ml_model module (stub validation)."""
 
 import pytest
-from pipeline.ml_model import (
+from pipeline.trial_success_predictor import (
     train_model,
     predict_success_probability,
     prepare_features_from_trial,

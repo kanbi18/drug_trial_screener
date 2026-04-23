@@ -3,17 +3,17 @@
 import pytest
 from unittest.mock import patch, MagicMock
 import pandas as pd
-from pipeline.screener import get_public_biotech_list, FMP_INDUSTRIES, FMP_SCREENER_URL
+from pipeline.stock_screener import get_public_biotech_list, FMP_INDUSTRIES, FMP_SCREENER_URL
 
 
 class TestGetPublicBiotechList:
-    @patch("pipeline.screener.FMP_API_KEY", "")
+    @patch("pipeline.stock_screener.FMP_API_KEY", "")
     def test_raises_without_api_key(self):
         with pytest.raises(RuntimeError, match="FMP_API_KEY"):
             get_public_biotech_list()
 
-    @patch("pipeline.screener.requests.get")
-    @patch("pipeline.screener.FMP_API_KEY", "test_key")
+    @patch("pipeline.stock_screener.requests.get")
+    @patch("pipeline.stock_screener.FMP_API_KEY", "test_key")
     def test_returns_dataframe_with_correct_columns(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.json.return_value = [
@@ -33,8 +33,8 @@ class TestGetPublicBiotechList:
         assert list(df.columns) == ["symbol", "name", "marketCap", "sector", "industry", "exchange"]
         assert len(df) >= 1
 
-    @patch("pipeline.screener.requests.get")
-    @patch("pipeline.screener.FMP_API_KEY", "test_key")
+    @patch("pipeline.stock_screener.requests.get")
+    @patch("pipeline.stock_screener.FMP_API_KEY", "test_key")
     def test_deduplicates_by_symbol(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.json.return_value = [
@@ -49,8 +49,8 @@ class TestGetPublicBiotechList:
         assert df["symbol"].nunique() == 1
         assert len(df) == 1
 
-    @patch("pipeline.screener.requests.get")
-    @patch("pipeline.screener.FMP_API_KEY", "test_key")
+    @patch("pipeline.stock_screener.requests.get")
+    @patch("pipeline.stock_screener.FMP_API_KEY", "test_key")
     def test_empty_response(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.json.return_value = []
@@ -61,8 +61,8 @@ class TestGetPublicBiotechList:
         assert df.empty
         assert list(df.columns) == ["symbol", "name", "marketCap", "sector", "industry", "exchange"]
 
-    @patch("pipeline.screener.requests.get")
-    @patch("pipeline.screener.FMP_API_KEY", "test_key")
+    @patch("pipeline.stock_screener.requests.get")
+    @patch("pipeline.stock_screener.FMP_API_KEY", "test_key")
     def test_market_cap_filter_passed(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.json.return_value = []
@@ -75,8 +75,8 @@ class TestGetPublicBiotechList:
             params = call[1]["params"]
             assert params["marketCapLowerThan"] == int(10e9)
 
-    @patch("pipeline.screener.requests.get")
-    @patch("pipeline.screener.FMP_API_KEY", "test_key")
+    @patch("pipeline.stock_screener.requests.get")
+    @patch("pipeline.stock_screener.FMP_API_KEY", "test_key")
     def test_no_market_cap_filter_when_none(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.json.return_value = []
@@ -89,8 +89,8 @@ class TestGetPublicBiotechList:
             params = call[1]["params"]
             assert "marketCapLowerThan" not in params
 
-    @patch("pipeline.screener.requests.get")
-    @patch("pipeline.screener.FMP_API_KEY", "test_key")
+    @patch("pipeline.stock_screener.requests.get")
+    @patch("pipeline.stock_screener.FMP_API_KEY", "test_key")
     def test_queries_all_three_industries(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.json.return_value = []
@@ -105,8 +105,8 @@ class TestGetPublicBiotechList:
         ]
         assert queried_industries == FMP_INDUSTRIES
 
-    @patch("pipeline.screener.requests.get")
-    @patch("pipeline.screener.FMP_API_KEY", "test_key")
+    @patch("pipeline.stock_screener.requests.get")
+    @patch("pipeline.stock_screener.FMP_API_KEY", "test_key")
     def test_custom_exchanges(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.json.return_value = []

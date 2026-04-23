@@ -23,21 +23,21 @@ python cli.py --help
 
 ## Pipeline Steps
 
-### 1. Stock Screening (`pipeline/screener.py`)
+### 1. Stock Screening (`pipeline/stock_screener.py`)
 **API:** Financial Modeling Prep (FMP)  
 - Industries: Biotechnology, Drug Manufacturers (General & Specialty)
 - Exchanges: NYSE, NASDAQ, AMEX
 - Market cap filter: configurable via `--cap` flag
 - Output: company universe list (symbol, name, marketCap, sector, industry, exchange)
 
-### 2. Clinical Trial Fetching (`pipeline/trials.py`)
+### 2. Clinical Trial Fetching (`pipeline/clinical_trials.py`)
 **API:** ClinicalTrials.gov v2  
 - Statuses: RECRUITING, NOT_YET_RECRUITING
 - Max 50 trials per company
 - Enriched fields: enrollment count, conditions, locations count, start date, has results
 - Phase filtering via `--phase` flag (e.g. `--phase 2,3`)
 
-### 3. Trial Readiness Scoring (`pipeline/scoring.py`)
+### 3. Trial Readiness Scoring (`pipeline/trial_readiness_scoring.py`)
 Each trial gets three scores:
 
 | Column | Type | Description |
@@ -60,10 +60,10 @@ Each trial gets three scores:
 
 Auto-generates `readiness_rationale` summarizing top 3 contributing factors.
 
-### 4. ML Model — Stub (`pipeline/ml_model.py`)
+### 4. ML Model — Stub (`pipeline/trial_success_predictor.py`)
 Documented interface for a future gradient-boosted classifier (XGBoost/LightGBM) trained on historical trial outcomes. **Not called in the pipeline yet.** See module docstring for architecture, training data schema, feature engineering notes, and implementation checklist.
 
-### 5. Company Info Table (`pipeline/company_info.py`)
+### 5. Company Metadata (`pipeline/company_metadata.py`)
 **API:** OpenFDA Drug API (free, no key)  
 Separate table (joined on ticker), generated with `--company-info` flag:
 
@@ -74,7 +74,7 @@ Separate table (joined on ticker), generated with `--company-info` flag:
 | active_trial_count | Aggregated from trials |
 | avg_readiness_score | Aggregated from scoring |
 
-### 6. Export (`pipeline/export.py`)
+### 6. Export (`pipeline/pipeline_exporter.py`)
 - **CSV:** ✅ Implemented — auto-dated filenames to `data/`
 - **Obsidian markdown:** Planned — export interface is extensible for future formats
 
@@ -120,17 +120,19 @@ Separate table (joined on ticker), generated with `--company-info` flag:
 
 ```
 research/
-├── cli.py                          # CLI entry point (argparse)
-├── cli_test.py                     # CLI tests
+├── cli.py                              # CLI entry point (argparse)
+├── cli_test.py                         # CLI tests
 ├── pipeline/
 │   ├── __init__.py
-│   ├── screener.py                 # FMP stock screener
-│   ├── trials.py                   # ClinicalTrials.gov fetching
-│   ├── scoring.py                  # Readiness score + base rate
-│   ├── ml_model.py                 # ML prediction (stub, documented)
-│   ├── company_info.py             # Company metadata + OpenFDA
-│   └── export.py                   # CSV export (extensible)
-├── data/                           # Generated output files
+│   ├── stock_screener.py               # FMP stock screener
+│   ├── clinical_trials.py              # ClinicalTrials.gov fetching
+│   ├── trial_readiness_scoring.py      # Readiness score + base rate
+│   ├── trial_success_predictor.py      # ML prediction (stub, documented)
+│   ├── company_metadata.py             # Company metadata + OpenFDA
+│   ├── pipeline_exporter.py            # CSV export (extensible)
+│   └── *_test.py                       # Tests alongside each module
+├── data/    _test.py                       # Tests alongside each module
+├── data/                               # Generated output files
 └── README.md
 ```
 
